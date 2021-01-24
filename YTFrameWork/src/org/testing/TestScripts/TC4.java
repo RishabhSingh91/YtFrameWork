@@ -18,7 +18,6 @@ public class TC4 extends Base{
 	@Test
 	public void Subscription() throws InterruptedException, IOException
 	{
-		Properties pr = LoadProperties.Load("../YTFrameWork/src/WebelementYT");
 		WebDriverWait wait = new WebDriverWait(driver, 10);	
 		driver.findElement(By.xpath(pr.getProperty("signinBtn"))).click();
 		driver.findElement(By.xpath(pr.getProperty("EmailTxt"))).sendKeys("ytdummy91@gmail.com");

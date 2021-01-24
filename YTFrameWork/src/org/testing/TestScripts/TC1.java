@@ -23,7 +23,6 @@ public class TC1 extends Base {
 	@Test
 	public void Login() throws InterruptedException, IOException
 	{
-		Properties pr = LoadProperties.Load("../YTFrameWork/src/WebelementYT");
 		driver.findElement(By.xpath(pr.getProperty("signinBtn"))).click();
 		driver.findElement(By.xpath(pr.getProperty("EmailTxt"))).sendKeys("ytdummy91@gmail.com");
 		driver.findElement(By.xpath(pr.getProperty("continueEmail"))).click();
