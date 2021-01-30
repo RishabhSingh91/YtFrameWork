@@ -4,6 +4,11 @@
   <artifactId>YTFrameWork</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
+  <dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
+</dependency>
    <dependency>
                  <groupId>org.apache.poi</groupId>
                  <artifactId>poi</artifactId>
