@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testing.Base.Base;
+import org.testing.Pages.LoginPage;
+import org.testing.Pages.LogoutPage;
 import org.testing.Utilities.LoadDriver;
 import org.testing.Utilities.LoadProperties;
 import org.testng.annotations.AfterMethod;
@@ -23,25 +25,13 @@ public class TC1 extends Base {
 	@Test
 	public void Login() throws InterruptedException, IOException
 	{
-		driver.findElement(By.xpath(pr.getProperty("signinBtn"))).click();
-		driver.findElement(By.xpath(pr.getProperty("EmailTxt"))).sendKeys("ytdummy91@gmail.com");
-		driver.findElement(By.xpath(pr.getProperty("continueEmail"))).click();
-		WebDriverWait wait = new WebDriverWait(driver, 10);		
-		Thread.sleep(10000);
-		WebElement body= driver.findElement(By.xpath(pr.getProperty("password")));
-		System.out.println("main body is displayed: "+ body.isDisplayed());
-		wait.until(ExpectedConditions.elementToBeClickable(body));
-		System.out.println("Body is interactable: "+body.isEnabled());
-		System.out.println("Reached");
-		body.sendKeys("Dummy@1234");
-		WebElement e =driver.findElement(By.xpath(pr.getProperty("continuePass")));
-		e.click();
+		LoginPage obj = new LoginPage(driver, pr);
+		LogoutPage obj2 = new LogoutPage(driver, pr);
+		obj.signin("ytdummy91@gmail.com", "Dummy@1234");
 		Thread.sleep(5000);
 		driver.findElement(By.xpath(pr.getProperty("TrendingVideo"))).click();
 		Thread.sleep(5000);
-		driver.findElement(By.xpath(pr.getProperty("SignoutDropDown"))).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath(pr.getProperty("SignoutBtn"))).click();
+		obj2.Logout();
 		
 	}
 	

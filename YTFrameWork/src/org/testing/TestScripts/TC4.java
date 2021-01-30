@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testing.Base.Base;
+import org.testing.Pages.LoginPage;
+import org.testing.Pages.LogoutPage;
 import org.testing.Utilities.LoadDriver;
 import org.testing.Utilities.LoadProperties;
 import org.testng.annotations.AfterMethod;
@@ -19,18 +21,13 @@ public class TC4 extends Base{
 	public void Subscription() throws InterruptedException, IOException
 	{
 		WebDriverWait wait = new WebDriverWait(driver, 10);	
-		driver.findElement(By.xpath(pr.getProperty("signinBtn"))).click();
-		driver.findElement(By.xpath(pr.getProperty("EmailTxt"))).sendKeys("ytdummy91@gmail.com");
-		driver.findElement(By.xpath(pr.getProperty("continueEmail"))).click();	
-		Thread.sleep(10000);
-		driver.findElement(By.xpath(pr.getProperty("password"))).sendKeys("Dummy@1234");
-		driver.findElement(By.xpath(pr.getProperty("continuePass"))).click();
+		LoginPage obj = new LoginPage(driver, pr);
+		LogoutPage obj2 = new LogoutPage(driver, pr);
+		obj.signin("ytdummy91@gmail.com", "Dummy@1234");
 		Thread.sleep(3000);
 		driver.findElement(By.xpath(pr.getProperty("Library"))).click();
-		Thread.sleep(10000);
-		driver.findElement(By.xpath(pr.getProperty("SignoutDropDown"))).click();
-		Thread.sleep(5000); 
-		driver.findElement(By.xpath(pr.getProperty("SignoutBtn"))).click();
+		Thread.sleep(5000);
+		obj2.Logout();
 	
 	}
 

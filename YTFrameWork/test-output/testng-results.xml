@@ -2,24 +2,20 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-24T06:59:36Z" name="Default suite" finished-at="2021-01-24T07:00:23Z" duration-ms="46499">
+  <suite started-at="2021-01-30T10:19:43Z" name="Default suite" finished-at="2021-01-30T10:20:47Z" duration-ms="64011">
     <groups>
     </groups>
-    <test started-at="2021-01-24T06:59:36Z" name="Default test" finished-at="2021-01-24T07:00:23Z" duration-ms="46499">
-      <class name="org.testing.TestScripts.TC1">
-        <test-method is-config="true" signature="Launch()[pri:0, instance:org.testing.TestScripts.TC1@176b75f7]" started-at="2021-01-24T12:29:36Z" name="Launch" finished-at="2021-01-24T12:29:52Z" duration-ms="15370" status="PASS">
+    <test started-at="2021-01-30T10:19:43Z" name="Default test" finished-at="2021-01-30T10:20:47Z" duration-ms="64011">
+      <class name="org.testing.TestScripts.TC10">
+        <test-method is-config="true" signature="Launch()[pri:0, instance:org.testing.TestScripts.TC10@573906eb]" started-at="2021-01-30T15:49:43Z" name="Launch" finished-at="2021-01-30T15:49:56Z" duration-ms="13642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launch -->
-        <test-method signature="Login()[pri:0, instance:org.testing.TestScripts.TC1@176b75f7]" started-at="2021-01-24T12:29:52Z" name="Login" finished-at="2021-01-24T12:30:21Z" duration-ms="29088" status="PASS">
+        <test-method signature="Subscription()[pri:0, instance:org.testing.TestScripts.TC10@573906eb]" started-at="2021-01-30T15:49:56Z" name="Subscription" finished-at="2021-01-30T15:50:47Z" duration-ms="50353" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:org.testing.TestScripts.TC1@176b75f7]" started-at="2021-01-24T12:30:21Z" name="closeBrowser" finished-at="2021-01-24T12:30:23Z" duration-ms="2027" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- org.testing.TestScripts.TC1 -->
+        </test-method> <!-- Subscription -->
+      </class> <!-- org.testing.TestScripts.TC10 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -31,7 +31,7 @@ public class Base {
 		driver.manage().window().maximize();
 	}
 
-	@AfterMethod
+	@AfterMethod(enabled = true)
 	public void closeBrowser()
 	{
 		driver.quit();

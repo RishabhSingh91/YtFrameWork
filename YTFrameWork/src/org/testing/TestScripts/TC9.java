@@ -11,6 +11,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testing.Base.Base;
+import org.testing.Pages.LoginPage;
+import org.testing.Pages.LogoutPage;
+import org.testing.Pages.VideoPlayPage;
 import org.testing.Utilities.LoadDriver;
 import org.testing.Utilities.LoadProperties;
 import org.testng.annotations.AfterMethod;
@@ -23,27 +26,12 @@ public class TC9 extends Base {
 	public void Subscription() throws InterruptedException, IOException
 	{
 		WebDriverWait wait = new WebDriverWait(driver, 10);	
-		driver.findElement(By.xpath(pr.getProperty("signinBtn"))).click();
-		driver.findElement(By.xpath(pr.getProperty("EmailTxt"))).sendKeys("ytdummy91@gmail.com");
-		driver.findElement(By.xpath(pr.getProperty("continueEmail"))).click();
-		Thread.sleep(10000);
-		driver.findElement(By.xpath(pr.getProperty("password"))).sendKeys("Dummy@1234");
-		driver.findElement(By.xpath(pr.getProperty("continuePass"))).click();
+		LoginPage obj = new LoginPage(driver, pr);
+		LogoutPage obj2 = new LogoutPage(driver, pr);
+		VideoPlayPage obj3 = new VideoPlayPage(driver, pr);
+		obj.signin("ytdummy91@gmail.com", "Dummy@1234");
 		Thread.sleep(5000);
-		List<WebElement> allvideos = driver.findElements(By.xpath(pr.getProperty("Allvideos")));
-		int count =0;
-		Thread.sleep(5000);
-		for(WebElement e: allvideos)
-		{
-			count++;
-			try {
-			if(count==11)
-			{
-				e.click();
-			}}catch(Exception e1) {
-				continue;}
-			
-		}
+		obj3.PlayVideo(1);
 		Thread.sleep(5000);
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("window.scrollBy(0,350)");
@@ -54,7 +42,6 @@ public class TC9 extends Base {
 		{
 			WebElement com = comment.get(i);
 				try {
-					System.out.println("Passed element id is: "+com.getAttribute("id"));
 					Thread.sleep(3000);
 					    driver.findElement(By.xpath(pr.getProperty("comment1"))).sendKeys("I loved this video");
 				}
@@ -66,9 +53,8 @@ public class TC9 extends Base {
 					{
 						System.out.println("Entered second loop");
 						e1.printStackTrace();
-						continue;}
-					System.out.println("Failed element id is: "+com.getAttribute("id"));
-					e.printStackTrace();
+						continue;
+						}
 					continue;
 				}
 			
@@ -78,8 +64,6 @@ public class TC9 extends Base {
 		Thread.sleep(5000);
 		driver.findElement(By.xpath(pr.getProperty("SubscribeVideo"))).click();
 		Thread.sleep(5000);
-		driver.findElement(By.xpath(pr.getProperty("SignoutDropDown"))).click();
-		Thread.sleep(5000); 
-		driver.findElement(By.xpath(pr.getProperty("SignoutBtn"))).click();
+		obj2.Logout();
 }	
 }
