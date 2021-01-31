@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]">
+  <test name="Command line test f2c46110-4c55-4650-8f4c-39145e3f0bef(failed)">
+    <classes>
+      <class name="org.testing.TestScripts.TC1">
+        <methods>
+          <include name="Launch"/>
+          <include name="Login"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC1 -->
+      <class name="org.testing.TestScripts.TC3">
+        <methods>
+          <include name="Launch"/>
+          <include name="Subscription"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC3 -->
+    </classes>
+  </test> <!-- Command line test f2c46110-4c55-4650-8f4c-39145e3f0bef(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
