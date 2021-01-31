@@ -29,7 +29,7 @@ public class TC1 extends Base {
 		LogsCapture.takelogs("Login Started", "TC1");
 		LoginPage obj = new LoginPage(driver, pr);
 		LogoutPage obj2 = new LogoutPage(driver, pr);
-		obj.signin("ytdummy91@gmail.com", "Dummy@1234");
+		obj.signin("ytdummy9102@gmail.com", "Dummy@1234");
 		Thread.sleep(5000);
 		driver.findElement(By.xpath(pr.getProperty("TrendingVideo"))).click();
 		Thread.sleep(5000);
