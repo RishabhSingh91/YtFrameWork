@@ -3,13 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="org.testing.TestScripts.TC10">
+      <class name="org.testing.TestScripts.TC1">
         <methods>
           <include name="Launch"/>
-          <include name="Subscription"/>
+          <include name="Login"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- org.testing.TestScripts.TC10 -->
+      </class> <!-- org.testing.TestScripts.TC1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
