@@ -2,24 +2,24 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-31T19:44:14Z" name="Suite1" finished-at="2021-01-31T19:45:01Z" duration-ms="46761">
+  <suite started-at="2021-02-06T15:16:09Z" name="Suite1" finished-at="2021-02-06T15:17:43Z" duration-ms="93944">
     <groups>
     </groups>
-    <test started-at="2021-01-31T19:44:14Z" name="Command line test 3251eac0-6f3d-4c35-bb19-409f5fb43bd1" finished-at="2021-01-31T19:45:01Z" duration-ms="46761">
+    <test started-at="2021-02-06T15:16:09Z" name="Command line test 046ae6f3-7cd0-4f00-8848-bd3b614eeae4" finished-at="2021-02-06T15:17:43Z" duration-ms="93944">
       <class name="org.testing.TestScripts.TC3">
-        <test-method is-config="true" signature="Launch()[pri:0, instance:org.testing.TestScripts.TC3@20ce78ec]" started-at="2021-02-01T01:14:14Z" name="Launch" finished-at="2021-02-01T01:14:28Z" duration-ms="13984" status="PASS">
+        <test-method is-config="true" signature="Launch()[pri:0, instance:org.testing.TestScripts.TC3@20ce78ec]" started-at="2021-02-06T20:46:09Z" name="Launch" finished-at="2021-02-06T20:46:30Z" duration-ms="21082" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launch -->
-        <test-method signature="Subscription()[pri:0, instance:org.testing.TestScripts.TC3@20ce78ec]" started-at="2021-02-01T01:14:28Z" name="Subscription" finished-at="2021-02-01T01:14:59Z" duration-ms="31142" status="PASS">
+        <test-method signature="Subscription()[pri:0, instance:org.testing.TestScripts.TC3@20ce78ec]" started-at="2021-02-06T20:46:30Z" name="Subscription" finished-at="2021-02-06T20:47:14Z" duration-ms="44024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Subscription -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:org.testing.TestScripts.TC3@20ce78ec]" started-at="2021-02-01T01:14:59Z" name="closeBrowser" finished-at="2021-02-01T01:15:01Z" duration-ms="1618" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:org.testing.TestScripts.TC3@20ce78ec]" started-at="2021-02-06T20:47:14Z" name="closeBrowser" finished-at="2021-02-06T20:47:43Z" duration-ms="28826" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- org.testing.TestScripts.TC3 -->
-    </test> <!-- Command line test 3251eac0-6f3d-4c35-bb19-409f5fb43bd1 -->
+    </test> <!-- Command line test 046ae6f3-7cd0-4f00-8848-bd3b614eeae4 -->
   </suite> <!-- Suite1 -->
 </testng-results>
