@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite1]">
-  <test name="Command line test f2c46110-4c55-4650-8f4c-39145e3f0bef(failed)">
+  <test name="Command line test 74c3bf8e-925c-49ea-acee-a7f4415f199f(failed)">
     <classes>
+      <class name="org.testing.TestScripts.TC2">
+        <methods>
+          <include name="Launch"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC2 -->
+      <class name="org.testing.TestScripts.TC3">
+        <methods>
+          <include name="Subscription"/>
+        </methods>
+      </class> <!-- org.testing.TestScripts.TC3 -->
       <class name="org.testing.TestScripts.TC1">
         <methods>
           <include name="Launch"/>
-          <include name="Login"/>
+          <include name="ReportGenerator"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- org.testing.TestScripts.TC1 -->
-      <class name="org.testing.TestScripts.TC3">
-        <methods>
-          <include name="Launch"/>
-          <include name="Subscription"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- org.testing.TestScripts.TC3 -->
     </classes>
-  </test> <!-- Command line test f2c46110-4c55-4650-8f4c-39145e3f0bef(failed) -->
+  </test> <!-- Command line test 74c3bf8e-925c-49ea-acee-a7f4415f199f(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

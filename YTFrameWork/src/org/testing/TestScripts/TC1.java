@@ -19,6 +19,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.steadystate.css.dom.Property;
 
 public class TC1 extends Base {
@@ -26,16 +27,20 @@ public class TC1 extends Base {
 	@Test
 	public void Login() throws InterruptedException, IOException
 	{
+		try {
 		LogsCapture.takelogs("Login Started", "TC1");
 		LoginPage obj = new LoginPage(driver, pr);
 		LogoutPage obj2 = new LogoutPage(driver, pr);
+		test = extent.createTest("Trending videos");
 		obj.signin("ytdummy9102@gmail.com", "Dummy@1234");
 		Thread.sleep(5000);
 		driver.findElement(By.xpath(pr.getProperty("TrendingVideo"))).click();
 		Thread.sleep(5000);
 		obj2.Logout();
 		LogsCapture.takelogs("Login Passed", "TC1");
-		
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 

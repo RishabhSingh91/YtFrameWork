@@ -1,25 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-06T15:16:09Z" name="Suite1" finished-at="2021-02-06T15:17:43Z" duration-ms="93944">
+  <suite started-at="2021-02-09T18:25:13Z" name="Suite1" finished-at="2021-02-09T18:27:14Z" duration-ms="121281">
     <groups>
     </groups>
-    <test started-at="2021-02-06T15:16:09Z" name="Command line test 046ae6f3-7cd0-4f00-8848-bd3b614eeae4" finished-at="2021-02-06T15:17:43Z" duration-ms="93944">
+    <test started-at="2021-02-09T18:25:13Z" name="Command line test 1e435480-ac6d-4ef4-b018-6e87f519d567" finished-at="2021-02-09T18:27:14Z" duration-ms="121281">
       <class name="org.testing.TestScripts.TC3">
-        <test-method is-config="true" signature="Launch()[pri:0, instance:org.testing.TestScripts.TC3@20ce78ec]" started-at="2021-02-06T20:46:09Z" name="Launch" finished-at="2021-02-06T20:46:30Z" duration-ms="21082" status="PASS">
+        <test-method is-config="true" signature="Launch()[pri:0, instance:org.testing.TestScripts.TC3@7c729a55]" started-at="2021-02-09T23:56:28Z" name="Launch" finished-at="2021-02-09T23:56:44Z" duration-ms="15755" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launch -->
-        <test-method signature="Subscription()[pri:0, instance:org.testing.TestScripts.TC3@20ce78ec]" started-at="2021-02-06T20:46:30Z" name="Subscription" finished-at="2021-02-06T20:47:14Z" duration-ms="44024" status="PASS">
+        <test-method signature="Subscription()[pri:0, instance:org.testing.TestScripts.TC3@7c729a55]" started-at="2021-02-09T23:56:44Z" name="Subscription" finished-at="2021-02-09T23:57:12Z" duration-ms="28285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Subscription -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:org.testing.TestScripts.TC3@20ce78ec]" started-at="2021-02-06T20:47:14Z" name="closeBrowser" finished-at="2021-02-06T20:47:43Z" duration-ms="28826" status="PASS">
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:org.testing.TestScripts.TC3@7c729a55]" started-at="2021-02-09T23:57:12Z" name="closeBrowser" finished-at="2021-02-09T23:57:14Z" duration-ms="1694" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Subscription status=SUCCESS method=TC3.Subscription()[pri:0, instance:org.testing.TestScripts.TC3@7c729a55] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- org.testing.TestScripts.TC3 -->
-    </test> <!-- Command line test 046ae6f3-7cd0-4f00-8848-bd3b614eeae4 -->
+      <class name="org.testing.TestScripts.TC2">
+        <test-method is-config="true" signature="Launch()[pri:0, instance:org.testing.TestScripts.TC2@47af7f3d]" started-at="2021-02-09T23:55:42Z" name="Launch" finished-at="2021-02-09T23:55:57Z" duration-ms="14750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch -->
+        <test-method signature="History()[pri:0, instance:org.testing.TestScripts.TC2@47af7f3d]" started-at="2021-02-09T23:55:57Z" name="History" finished-at="2021-02-09T23:56:27Z" duration-ms="29899" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- History -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:org.testing.TestScripts.TC2@47af7f3d]" started-at="2021-02-09T23:56:27Z" name="closeBrowser" finished-at="2021-02-09T23:56:28Z" duration-ms="1711" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=History status=SUCCESS method=TC2.History()[pri:0, instance:org.testing.TestScripts.TC2@47af7f3d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- org.testing.TestScripts.TC2 -->
+      <class name="org.testing.TestScripts.TC1">
+        <test-method is-config="true" signature="ReportGenerator()[pri:0, instance:org.testing.TestScripts.TC1@61862a7f]" started-at="2021-02-09T23:55:13Z" name="ReportGenerator" finished-at="2021-02-09T23:55:13Z" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReportGenerator -->
+        <test-method is-config="true" signature="Launch()[pri:0, instance:org.testing.TestScripts.TC1@61862a7f]" started-at="2021-02-09T23:55:13Z" name="Launch" finished-at="2021-02-09T23:55:27Z" duration-ms="14381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch -->
+        <test-method signature="Login()[pri:0, instance:org.testing.TestScripts.TC1@61862a7f]" started-at="2021-02-09T23:55:27Z" name="Login" finished-at="2021-02-09T23:55:41Z" duration-ms="13410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:org.testing.TestScripts.TC1@61862a7f]" started-at="2021-02-09T23:55:41Z" name="closeBrowser" finished-at="2021-02-09T23:55:42Z" duration-ms="1383" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=TC1.Login()[pri:0, instance:org.testing.TestScripts.TC1@61862a7f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="quitReport()[pri:0, instance:org.testing.TestScripts.TC1@61862a7f]" started-at="2021-02-09T23:57:14Z" name="quitReport" finished-at="2021-02-09T23:57:14Z" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitReport -->
+      </class> <!-- org.testing.TestScripts.TC1 -->
+    </test> <!-- Command line test 1e435480-ac6d-4ef4-b018-6e87f519d567 -->
   </suite> <!-- Suite1 -->
 </testng-results>
