@@ -19,6 +19,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 public class TC7 extends Base {
 	@Test
@@ -45,7 +47,7 @@ public class TC7 extends Base {
 		obj2.Logout();
 
 		}catch (Exception e) {
-			System.out.println("Fail");
+			test.fail(MarkupHelper.createLabel("TC7 "+" TestCase Fail", ExtentColor.RED));
 		}
 
 	}

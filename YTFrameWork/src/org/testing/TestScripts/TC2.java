@@ -16,6 +16,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 public class TC2 extends Base{
 
@@ -34,7 +36,7 @@ public class TC2 extends Base{
 		Thread.sleep(5000);
 		obj2.Logout();
 		}catch (Exception e) {
-			e.printStackTrace();
+			test.fail(MarkupHelper.createLabel("TC2 "+" TestCase Fail", ExtentColor.RED));
 		}
 	}
 	

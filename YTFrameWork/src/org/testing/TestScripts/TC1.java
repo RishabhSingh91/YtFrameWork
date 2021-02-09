@@ -20,6 +20,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.steadystate.css.dom.Property;
 
 public class TC1 extends Base {
@@ -39,7 +41,7 @@ public class TC1 extends Base {
 		obj2.Logout();
 		LogsCapture.takelogs("Login Passed", "TC1");
 		}catch (Exception e) {
-			e.printStackTrace();
+			test.fail(MarkupHelper.createLabel("TC1 "+" TestCase Fail", ExtentColor.RED));
 		}
 	}
 	
