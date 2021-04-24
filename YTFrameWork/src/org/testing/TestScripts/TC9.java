@@ -26,7 +26,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 public class TC9 extends Base {	
 	
-	@Test
+	@Test(groups = "P1")
 	public void Subscription() throws InterruptedException, IOException
 	{
 		try {
